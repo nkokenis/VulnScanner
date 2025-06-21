@@ -40,7 +40,7 @@ def scan_ports(host, ports, timeout, retries, verbose):
                     print(f"[+] Port {port} is open")
                     open_ports.append(port)
         except Exception as e:
-            print(f"[-] Error scanning port {port}: {e}")
+            print(f"[!] Error scanning port {port}: {e}")
     return open_ports
 
 # Function:
